@@ -15,24 +15,26 @@ import { CarouselContainer,
 
 export default function Hero() {
 
+   
+
     
     return (
         <CarouselContainer>
-            <Carousel autoPlay={true} infiniteLoop={true} showThumbs={false}>
+            <Carousel autoPlay={true} interval={4000} infiniteLoop={true} showThumbs={false}>
 
                 <CarouselItem>
                     <CarouselImg src={PizzaImg}/>
-                    <CarouselLegend className="legend"> legend1</CarouselLegend>
+                    <CarouselLegend>legend1</CarouselLegend>
                 </CarouselItem>
 
                 <CarouselItem>
                     <CarouselImg src={CalamariImg}/>
-                    <CarouselLegend className="legend"> legend2</CarouselLegend>
+                    <CarouselLegend>legend2</CarouselLegend>
                 </CarouselItem>
 
                 <CarouselItem>
                     <CarouselImg src={DessertImg}/>
-                    <CarouselLegend className="legend"> legend3</CarouselLegend>
+                    <CarouselLegend>legend3</CarouselLegend>
                 </CarouselItem>
                 
             </Carousel>

@@ -4,10 +4,13 @@ import LocalDiningIcon from '@material-ui/icons/LocalDining';
 
 export const SidebarContainer = styled.aside`
   position: fixed;
+  top: 50%;
+  right: 0;
   z-index: 999;
   width: 350px;
-  height: 100%;
-  background: #746711;
+  height: 80%;
+  margin-top: 9rem;
+  background: rgba(0,0,0, .7);
   display: grid;
   align-items: center;
   top: 0;
@@ -20,8 +23,12 @@ export const SidebarContainer = styled.aside`
 `;
 
 export const CloseIcon = styled(LocalDiningIcon)`
-  color: #000;
+  color: #fff;
   margin: 0 10px 0 0;
+  
+  &:hover{
+    color: #e31500;
+  }
 `;
 
 export const Icon = styled.div`
@@ -33,6 +40,7 @@ export const Icon = styled.div`
   font-size: 2rem;
   cursor: pointer;
   outline: none;
+  
 `;
 
 export const SidebarMenu = styled.div`
@@ -54,11 +62,11 @@ export const SidebarLink = styled(Link)`
   text-decoration: none;
   list-style: none;
   transition: 0.2s ease-in-out;
-  color: #000;
+  color: #fff;
   cursor: pointer;
 
   &:hover {
-    color: #e31837;
+    color: #e31500;
     transition: 0.2s ease-in-out;
   }
 `;
@@ -69,8 +77,7 @@ export const SideBtnWrap = styled.div`
 `;
 
 export const SidebarRoute = styled(Link)`
-  background: #e31837;
-  white-space: nowrap;
+  background: #e31500;
   padding: 1rem 2rem;
   color: #fff;
   outline: none;
