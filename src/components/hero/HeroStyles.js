@@ -19,8 +19,16 @@ export const CarouselImg = styled.img`
     
 `
 
-export const CarouselLegend = styled.p`
-    
+export const CarouselLegend = styled.div`
+    position: absolute;
+    width: 400px;
+    bottom: 25%;
+    left: 100px;
+    background: rgba(0,0,0, .7);
+    color: #eee;
+    padding: 2rem;
+
+    font-size: 2rem;
 
     
 `
