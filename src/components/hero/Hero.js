@@ -20,7 +20,7 @@ export default function Hero() {
     
     return (
         <CarouselContainer>
-            <Carousel autoPlay={true} interval={4000} infiniteLoop={true} showThumbs={false}>
+            <Carousel autoPlay={true} interval={10000} infiniteLoop={true} showThumbs={false}>
 
                 <CarouselItem>
                     <CarouselImg src={PizzaImg}/>
