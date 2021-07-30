@@ -3,14 +3,14 @@ import styled from 'styled-components';
 import LeftColImg from '../../images/calamari-1.jpg'
 
 export const AboutIntroWrapper = styled.div`
-    margin: auto;
+    margin:   auto;
     width: 80vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    margin: 1rem auto;
 `
 
 export const About = styled.div`
@@ -18,7 +18,7 @@ export const About = styled.div`
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: 100%;
+    width: 100%;    
 `
 
 export const Title = styled.div`
@@ -45,19 +45,28 @@ export const Paragraph = styled.div`
     font-size: clamp(1rem, 1vw, 1.5rem);
     width: 80%;
     margin: 0 auto;
-    padding: 0 0 2rem;
     overflow: hidden;
+    padding: 0 0 2rem 0;
 `
 
 export const LeftCol = styled.div`
-    left: 2rem;
-    z-index: 10;
     background: url(${LeftColImg});
     background-size: cover;
     background-position: center;
     flex: 2;
-    height: 60vh;
+    height: 60%;
+    max-width: 100%;
     transform: translateX(10%);
+    box-shadow: 5px 5px #e31500;;
+`
+
+export const RightColContainer = styled.div`
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid;
+    height: 100%;
 `
 
 export const RightCol = styled.div`
@@ -67,9 +76,7 @@ export const RightCol = styled.div`
     justify-content: space-around;
     padding: 1rem;
     background-color: darkgray;
-    z-index: 5;
     flex: 3;
-    padding-bottom: 2rem;
     height: 80vh;
 `
 

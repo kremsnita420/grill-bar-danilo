@@ -1,5 +1,5 @@
 import React from 'react'
-import { AboutIntroWrapper,About, Title, Paragraph, LeftCol, RightCol } from './AboutStyles'
+import { AboutIntroWrapper,About, Title, Paragraph, LeftCol, RightCol, RightColContainer } from './AboutStyles'
 import { SidebarRoute } from '../sidebar/SidebarStyles'
 
 export default function AboutIntro() {
@@ -13,6 +13,7 @@ export default function AboutIntro() {
                 </LeftCol>
 
                 <RightCol>
+                    <RightColContainer>
                     <Title><h1>Predstavitev</h1></Title>
                     
                     <Paragraph>
@@ -30,10 +31,13 @@ export default function AboutIntro() {
                         <br></br>
                         elit pellentesque habitant. Eget magna fermentum iaculis eu non diam phasellus
                         Aenean et tortor at risus viverra adipiscing at. Mattis rhoncus
-                        
+                        urna neque viverra justo nec ultrices dui. Amet consectetur adipiscing.
+                        elit pellentesque habitant. Eget magna fermentum iaculis eu non diam phasellus
+                        Aenean et tortor at risus viverra adipiscing at. Mattis rhoncus
                         
                     </Paragraph>
-                    <SidebarRoute to='/drinks'>Read More</SidebarRoute>
+                    <SidebarRoute style={{marginBottom: "1rem"}} to='/drinks'>Read More</SidebarRoute>
+                    </RightColContainer>
                 </RightCol>
             </About>
         </AboutIntroWrapper>

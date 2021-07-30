@@ -6,7 +6,7 @@ export const CarouselContainer = styled.div`
 
 
 export const CarouselItem = styled.div`
-    width: 100%;
+    width: 100vw;
     height: calc(100vh - 80px);
 
     
