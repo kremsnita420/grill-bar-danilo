@@ -8,14 +8,15 @@ import { ProductsContainer,
         ProductInfo,
         ProductDesc,
         ProductPrice,
-        ProductButton, } from './SpecialsStyles'
+         } from './SpecialsStyles'
+import { CarouselRouteInverted } from '../hero/HeroStyles'
 
-export default function Specials({heading, data}) {
+export default function Specials({data}) {
 
 
     return (
         <ProductsContainer>
-            <ProductsHeading>{heading}</ProductsHeading>
+            <ProductsHeading>Specialities</ProductsHeading>
             <ProductWrapper>
                 {data.map((product,index) => {
                     return (
@@ -25,7 +26,7 @@ export default function Specials({heading, data}) {
                                 <ProductTitle>{product.name}</ProductTitle>
                                 <ProductDesc>{product.desc}</ProductDesc>
                                 <ProductPrice>{product.price}</ProductPrice>
-                                <ProductButton>Click</ProductButton>
+                                <CarouselRouteInverted to='/menu'>Menu</CarouselRouteInverted>
                             </ProductInfo>
                             
                         </ProductCard>

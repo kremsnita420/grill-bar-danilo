@@ -3,7 +3,8 @@ import AboutIntro from '../components/about/AboutIntro'
 import Hero from '../components/hero/Hero'
 import Specials from '../components/specials/Specials'
 import Banner from '../components/banner/Banner'
-import {ProductDataTwo} from '../ProductsData'
+import {ProductDataTwo, ServicesData} from '../ProductsData'
+import Services from '../components/services/Services'
 
 
 export default function Home() {
@@ -16,8 +17,10 @@ export default function Home() {
         <>
             <Hero />
             <AboutIntro />
-            <Specials heading='Choose your favorite' data={ProductDataTwo} />
+            <Services data={ServicesData} />
             <Banner />
+            <Specials heading='Choose your favorite' data={ProductDataTwo} />
+            
         </>
     )
 }

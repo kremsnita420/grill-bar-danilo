@@ -5,9 +5,8 @@ export default function Navbar({toggle}) {
     return (
         <>
             <Nav>
-                <NavLink to='/' exact>Grill & Bar <span>Danilo</span></NavLink>
+                <NavLink to='/' exact>-Grill & Bar- <span>Danilo</span></NavLink>
                 <NavIcon onClick={toggle} >
-                    <p>Menu</p>
                     <Bars />
                 </NavIcon>
             </Nav>

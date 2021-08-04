@@ -6,27 +6,32 @@ export const BannerWrapper = styled.div`
     background-color: black;
     background: url(${WoodImg});
     width: 100vw;
-    height: 50vh;
+    object-fit: cover;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 2rem 0;
     margin: 3rem auto;
 `
 
 export const BannerContainer = styled.div`
-width: 80vw;
+    max-width: 100%;
     display: flex;
-   
-   height: 100%;
-   object-fit: cover;
+    flex-direction: column;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
 `
 
 export const BannerLeftCol = styled.div`
     flex: 1;
+    max-width: 90%;
+    margin: 1rem auto 0;
 `
 
 export const BannerLeftColImg = styled.img`
-    width: 100%;
+    max-width: 100%;
     height:100%;
     object-fit: cover;
     border-radius: 50%;

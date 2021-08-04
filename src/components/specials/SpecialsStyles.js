@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ProductsContainer = styled.div`
-  width: 80vw;
+  width: 90vw;
   margin: 0 auto;
 `;
 
@@ -16,23 +16,38 @@ export const ProductWrapper = styled.div`
 `;
 
 export const ProductCard = styled.div`
-  margin: 2rem;
+  margin: 1rem auto;
   line-height: 2;
-  width: 300px;
-  
+  width: 90vw;
+  background: rgba(255,255,255, .3);
+  padding: 1rem;
 `;
 
 export const ProductImg = styled.img`
-  height: 300px;
-  width: 300px;
-  max-width: 100%;
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
   box-shadow: 5px 5px #e31500;
 `;
 
 export const ProductsHeading = styled.h1`
-  font-size: clamp(2rem, 2.5vw, 3rem);
+position: relative;
+  font-size: 2rem;
   text-align: center;
-  margin-bottom: 5rem;
+  color: red;
+  margin-bottom: 2rem;
+
+  &::before {
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        content: 'Grill & Bar';
+        font-family: 'Style Script', cursive;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+ 
 `;
 
 export const ProductTitle = styled.h2`
@@ -69,11 +84,11 @@ export const ProductButton = styled.button`
   background: #e31837;
   color: #fff;
   transition: 0.2 ease-out;
+  border: 2px solid transparent;
 
   &:hover {
-    background: #fff;
-    transition: 0.2s ease-out;
-    cursor: pointer;
-    color: #000;
+        background: transparent;
+        color: #e31500;
+        border: 2px solid #e31500;
   }
 `;

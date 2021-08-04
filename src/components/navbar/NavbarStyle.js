@@ -1,26 +1,29 @@
 import styled from "styled-components";
 import { NavLink as Link } from "react-router-dom";
-import LocalPizzaIcon from '@material-ui/icons/LocalPizza';
+import MenuIcon from '@material-ui/icons/Menu';
 
 export const Nav = styled.nav`
   position: relative;
   background-color: rgb(0,0,0,1);
   height: 80px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   font-weight: 700;
+
+  @media (min-width: 765px) {
+        height: 120px;
+    }
 `;
 
 export const NavLink = styled(Link)`
   font-family: 'Style Script', cursive;
-  letter-spacing: 6px;
+  font-weight: 400;
+  letter-spacing: 3px;
   background-color: rgb(0,0,0,1);
-  top: 10px;
+  top: 1rem;
+  left: 1rem;
   position: absolute;
-  padding: 0 2.5rem;
-  border-radius: .75rem;
   color: #fff;
-  font-size: clamp(1rem, 3vw, 2rem);
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -29,30 +32,36 @@ export const NavLink = styled(Link)`
   text-align: center;
   display: block;
 
+  @media (min-width: 765px) {
+        font-size: 1.25rem;
+    }
+
 
   span {
     display: block;
-    font-size: clamp(3rem, 6vw, 5rem);
+    font-size: 2rem;
     font-family: 'Vast Shadow', cursive;
     color: #e31837;
+    line-height: 1;
+
+    @media (min-width: 765px) {
+        font-size: 4rem;
+    }
+
   }
 
+ 
 `
 
 export const NavIcon = styled.div`
-  display: block;
   position: absolute;
   z-index: 100;
-  top: 1rem;
+  top: 50%;
   right: 0;
   cursor: pointer;
   color: #fff;
 
-  p {
-
-    transform: translate(-125%, 100%);
-    font-weight: bold;
-  }
+  
 
   
   &:hover{
@@ -61,8 +70,16 @@ export const NavIcon = styled.div`
 `
 
 
-export const Bars = styled(LocalPizzaIcon)`
-display: block;
-  font-size: 3rem;
-  transform: translate(-50%, -15%);
+export const Bars = styled(MenuIcon)`
+  font-size: 2rem !important;
+  top:50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  margin-right: .5rem;
+
+  @media (min-width: 765px) {
+        font-size: 3rem !important;
+    }
+
+  
 `;

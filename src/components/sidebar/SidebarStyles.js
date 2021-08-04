@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import LocalDiningIcon from '@material-ui/icons/LocalDining';
+import CancelPresentationIcon from '@material-ui/icons/CancelPresentation';
 
 export const SidebarContainer = styled.aside`
   position: fixed;
@@ -19,9 +19,9 @@ export const SidebarContainer = styled.aside`
   }
 `;
 
-export const CloseIcon = styled(LocalDiningIcon)`
+export const CloseIcon = styled(CancelPresentationIcon)`
   color: #fff;
-  margin: 0 10px 0 0;
+  
   
   &:hover{
     color: #e31500;
@@ -85,7 +85,8 @@ export const SidebarRoute = styled(Link)`
   text-decoration: none;
 
   &:hover {
-    background: #fff;
-    color: #010606;
+        background: transparent;
+        color: #e31500;
+        border: 2px solid #e31500;
   }
 `;

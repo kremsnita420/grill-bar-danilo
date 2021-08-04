@@ -1,13 +1,16 @@
 import React, { useState} from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import './AppStyles';
 import { GlobalStyles } from './GlobalStyles';
 import Home from './Pages/Home';
-import Desserts from './Pages/Desserts';
-import Drinks from './Pages/Drinks';
+import Menu from './Pages/Menu';
+import About from './Pages/About';
 import NotFound from './Pages/NotFound';
 import Navbar  from '../src/components/navbar/Navbar';
 import Sidebar from './components/sidebar/Sidebar';
+import Contact from './Pages/Contact';
+import Footer from './components/footer/Footer';
+
+
 
 function App() {
 
@@ -21,18 +24,21 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className="App">
-        <GlobalStyles />
+    <GlobalStyles />
+      <div >
         <Navbar  toggle={toggle} />
         <Sidebar isOpen={isOpen} toggle={toggle} />
       </div>
 
       <Switch>
         <Route path='/' exact component={Home} />
-        <Route path='/desserts' component={Desserts} />
-        <Route path='/drinks' component={Drinks} />
+        <Route path='/menu' component={Menu} />
+        <Route path='/about' component={About} />
+        <Route path='/contact' component={Contact} />
         <Route component={NotFound} />
       </Switch>
+
+      <Footer />
       
     </BrowserRouter>
   );
