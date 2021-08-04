@@ -1,70 +1,85 @@
 import styled from "styled-components";
 import { NavLink as Link } from "react-router-dom";
-import LocalPizzaIcon from '@material-ui/icons/LocalPizza';
-import RestaurantIcon from '@material-ui/icons/Restaurant';
+import MenuIcon from '@material-ui/icons/Menu';
 
 export const Nav = styled.nav`
   position: relative;
-  background-color: rgba(0,0,0, 1);
+  background-color: rgb(0,0,0,1);
   height: 80px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   font-weight: 700;
+
+  @media (min-width: 765px) {
+        height: 120px;
+    }
 `;
 
 export const NavLink = styled(Link)`
-  background-color: rgba(33,33,33, .7);
-  padding: 0 3rem;
+  font-family: 'Style Script', cursive;
+  font-weight: 400;
+  letter-spacing: 3px;
+  background-color: rgb(0,0,0,1);
+  top: 1rem;
+  left: 1rem;
+  position: absolute;
   color: #fff;
-  font-size: 2rem;
   display: flex;
   align-items: center;
   text-decoration: none;
   cursor: pointer;
+  z-index: 3;
+  text-align: center;
+  display: block;
+
+  @media (min-width: 765px) {
+        font-size: 1.25rem;
+    }
+
 
   span {
     display: block;
-    padding: 10px;
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: 'Vast Shadow', cursive;
-    color: #e31500;
+    color: #e31837;
+    line-height: 1;
+
+    @media (min-width: 765px) {
+        font-size: 4rem;
+    }
+
   }
 
-  @media screen and (max-width: 400px) {
-    position: absolute;
-    top: 10px;
-    left: 25px;
-  }
-`;
+ 
+`
 
 export const NavIcon = styled.div`
-  display: block;
-  position: fixed;
-  top: 1rem;
+  position: absolute;
+  z-index: 100;
+  top: 50%;
   right: 0;
   cursor: pointer;
   color: #fff;
 
-  p {
-
-    transform: translate(-125%, 100%);
-    font-weight: bold;
-  }
+  
 
   
   &:hover{
-    color: #e31500;
+    color: #e31837;
   }
-`;
-
-export const Fork = styled(RestaurantIcon)`
-  font-size: 3rem;
-  margin-right: 10px;
 `
 
-export const Bars = styled(LocalPizzaIcon)`
-display: block;
-  font-size: 3rem;
-  height: 3rem;
-  transform: translate(-50%, -15%);
+
+export const Bars = styled(MenuIcon)`
+  font-size: 2rem !important;
+  top:50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  margin-right: .5rem;
+
+  @media (min-width: 765px) {
+        font-size: 3rem !important;
+    }
+
+  
 `;

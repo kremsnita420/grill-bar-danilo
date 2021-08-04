@@ -1282,11 +1282,6 @@
     "minimatch" "^3.0.4"
     "strip-json-comments" "^3.1.1"
 
-"@fortawesome/fontawesome-free@^5.15.3":
-  "integrity" "sha512-rFnSUN/QOtnOAgqFRooTA3H57JLDm0QEG/jPdk+tLQNL/eWd+Aok8g3qCI+Q1xuDPWpGW/i9JySpJVsq8Q0s9w=="
-  "resolved" "https://registry.npmjs.org/@fortawesome/fontawesome-free/-/fontawesome-free-5.15.3.tgz"
-  "version" "5.15.3"
-
 "@hapi/address@2.x.x":
   "integrity" "sha512-QD1PhQk+s31P1ixsX0H0Suoupp3VMXzIVMSwobR3F3MSUO2YCV0B7xqLcUw/Bh8yuvd3LhpyqLQWTNcRmp6IdQ=="
   "resolved" "https://registry.npmjs.org/@hapi/address/-/address-2.1.4.tgz"
@@ -4725,6 +4720,11 @@
     "inherits" "^2.0.4"
     "minimalistic-assert" "^1.0.1"
     "minimalistic-crypto-utils" "^1.0.1"
+
+"emailjs-com@^3.2.0":
+  "integrity" "sha512-Prbz3E1usiAwGjMNYRv6EsJ5c373cX7/AGnZQwOfrpNJrygQJ15+E9OOq4pU8yC977Z5xMetRfc3WmDX6RcjAA=="
+  "resolved" "https://registry.npmjs.org/emailjs-com/-/emailjs-com-3.2.0.tgz"
+  "version" "3.2.0"
 
 "emittery@^0.7.1":
   "integrity" "sha512-A8OG5SR/ij3SsJdWDJdkkSYUjQdCUx6APQXem0SaEePBSRg4eymGYwBkKo1Y6DU+af/Jn2dBQqDBvjnr9Vi8nQ=="
@@ -8343,6 +8343,11 @@
     "query-string" "^4.1.0"
     "sort-keys" "^1.0.0"
 
+"normalize.css@^8.0.1":
+  "integrity" "sha512-qizSNPO93t1YUuUhP22btGOo3chcvDFqFaj2TRybP0DMxkHOCTYwp3n34fel4a31ORXy4m1Xq0Gyqpb5m33qIg=="
+  "resolved" "https://registry.npmjs.org/normalize.css/-/normalize.css-8.0.1.tgz"
+  "version" "8.0.1"
+
 "npm-run-path@^2.0.0":
   "integrity" "sha1-NakjLfo11wZ7TLLd8jV7GHFTbF8="
   "resolved" "https://registry.npmjs.org/npm-run-path/-/npm-run-path-2.0.2.tgz"
@@ -11354,7 +11359,7 @@
     "loader-utils" "^2.0.0"
     "schema-utils" "^2.7.0"
 
-"styled-components@^5.3.0", "styled-components@>= 2":
+"styled-components@^4.0.0 || ^5.0.0", "styled-components@^5.3.0", "styled-components@>= 2":
   "integrity" "sha512-bPJKwZCHjJPf/hwTJl6TbkSZg/3evha+XPEizrZUGb535jLImwDUdjTNxXqjjaASt2M4qO4AVfoHJNe3XB/tpQ=="
   "resolved" "https://registry.npmjs.org/styled-components/-/styled-components-5.3.0.tgz"
   "version" "5.3.0"
@@ -11369,6 +11374,11 @@
     "hoist-non-react-statics" "^3.0.0"
     "shallowequal" "^1.1.0"
     "supports-color" "^5.5.0"
+
+"styled-normalize@^8.0.7":
+  "integrity" "sha512-qQV4O7B9g7ZUnStCwGde7Dc/mcFF/pz0Ha/LL7+j/r6uopf6kJCmmR7jCPQMCBrDkYiQ4xvw1hUoceVJkdaMuQ=="
+  "resolved" "https://registry.npmjs.org/styled-normalize/-/styled-normalize-8.0.7.tgz"
+  "version" "8.0.7"
 
 "stylehacks@^4.0.0":
   "integrity" "sha512-7GlLk9JwlElY4Y6a/rmbH2MhVlTyVmiJd1PfTCqFaIBEGMYNsrO/v3SeGTdhBThLg4Z+NbOk/qFMwCa+J+3p/g=="

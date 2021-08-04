@@ -1,16 +1,13 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import LocalDiningIcon from '@material-ui/icons/LocalDining';
+import CancelPresentationIcon from '@material-ui/icons/CancelPresentation';
 
 export const SidebarContainer = styled.aside`
   position: fixed;
-  top: 50%;
-  right: 0;
   z-index: 999;
   width: 350px;
-  height: 80%;
-  margin-top: 9rem;
-  background: rgba(0,0,0, .7);
+  height: 100%;
+  background: rgb(0,0,0);
   display: grid;
   align-items: center;
   top: 0;
@@ -22,9 +19,9 @@ export const SidebarContainer = styled.aside`
   }
 `;
 
-export const CloseIcon = styled(LocalDiningIcon)`
+export const CloseIcon = styled(CancelPresentationIcon)`
   color: #fff;
-  margin: 0 10px 0 0;
+  
   
   &:hover{
     color: #e31500;
@@ -82,12 +79,14 @@ export const SidebarRoute = styled(Link)`
   color: #fff;
   outline: none;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
   transition: 0.4s ease-in-out;
   text-decoration: none;
 
   &:hover {
-    background: #fff;
-    color: #010606;
+        background: transparent;
+        color: #e31500;
+        border: 2px solid #e31500;
   }
 `;
